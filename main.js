@@ -12,36 +12,36 @@ const password3 = "supToThis"
 
 
 // **YOUR** code below. Pass those tests!
-function isValidEmail(str){
-  if (str.endsWith('.prsvr@gmail.com') && str.indexOf('.prsvr@gmail.com') > 0 || str.endsWith('perseverenow.org') && str.indexOf('@perseverenow.org') > 0){
+function isValidEmail(email){
+  if (email.endsWith('.prsvr@gmail.com') && email.indexOf('.prsvr@gmail.com') > 0 || email.endsWith('perseverenow.org') && email.indexOf('@perseverenow.org') > 0){
     return true
   } else {
     return false
   }
 }
 
-function isValidPassword(str){  
-  if ((str.length >= 8) && ((str.toLowerCase()) !== str) && ((str.toUpperCase()) !== str)){
+function isValidPassword(password){  
+  if ((password.length >= 8) && ((password.toLowerCase()) !== password) && ((password.toUpperCase()) !== password)){
     return true
   } else {
     return false
   }
 }
 
-function isRegisteredUser(str){
-  if (str === user1 || str === user2 || str === user3){
+function isRegisteredUser(user){
+  if (user === user1 || user === user2 || user === user3){
     return true
   } else {
     return false
   }
 }
 
-function passwordMatches(user, pwd){
-  if (user === user1 && pwd === password1){
+function passwordMatches(user, password){
+  if (user === user1 && password === password1){
     return true
-  } else if (user === user2 && pwd === password2){
+  } else if (user === user2 && password === password2){
     return true
-  } else if (user === user3 && pwd === password3){
+  } else if (user === user3 && password === password3){
     return true
   } else {
     return false
